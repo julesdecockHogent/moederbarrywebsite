@@ -1,0 +1,545 @@
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/Futura-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("fonts/Futura-Bold.ttf");
+    font-weight: bold;
+}
+
+* {box-sizing: border-box;}
+html {
+  font-size: 62.5%;
+  font-family: "Futura", sans-serif;
+   color: #FFF;
+
+  }
+
+body {font-size: 1.4rem;line-height: 1.3;}
+header {
+  height: 100vh;
+  background-image: url(../img/header.JPG);
+  background-position: center 2rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    /* height: 100vh; */
+    height: 84vh;
+    display: block;
+    z-index: 0;
+    background-image: url(../img/headermobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+/* Iphone x */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait){
+  header {
+    /* height: 100vh; */
+    height: 67vh;
+    display: block;
+    z-index: 0;
+    background-image: url(../img/headermobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+/* Ipad versie */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  header {
+    /* height: 100vh; */
+    height: 84vh;
+    display: block;
+    z-index: 0;
+    background-image: url(../img/headermobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+/* Pixel 2xl */
+@media only screen and (min-width: 411px) and (max-width: 767px){
+  header {
+    /* height: 100vh; */
+    height: 67vh;
+    display: block;
+    z-index: 0;
+    background-image: url(../img/headermobile.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+
+a:link, a:visited {
+  color: #85001b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #233140;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+.header__content {
+  text-align:center;
+  flex-wrap: wrap;
+}
+
+.header__content img {
+  clear: both;
+  margin-bottom: 2rem;
+}
+
+.header__quote {
+  width: 100%;
+  text-align:center;
+  padding: 0 10%;
+  max-width: 58rem;
+  padding:1rem 8rem;
+  background: -webkit-linear-gradient(left,
+                rgba(0,0,0,0) 0%,
+                rgba(44,62,80,.5) 15%,
+                rgba(44,62,80,.5) 85%,
+                rgba(0,0,0,0) 100%
+    );
+}
+
+.header__quote h2 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  border-bottom: .6rem solid #85001b;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header__quote h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+header h1 {display:none;}
+
+header nav {
+  position:fixed;
+  z-index:9;
+  top:0;
+  left:0;
+  right:0;
+  background-color: #2c3e50;
+  height: 5rem;
+  line-height: 5rem;
+  transition: .3s ease all;
+}
+
+header nav .nav__container {
+  max-width: 96rem;
+  width: 100%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .nav__container .nav__name {
+  font-size: 2.4rem;
+}
+
+header nav a:link,header nav a:visited {
+  color: #FFF;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style:none;
+}
+
+header nav ul li {
+  margin: 0 2rem;
+}
+
+section {
+  padding: 4rem;
+  text-align:center;
+}
+
+section h2 {
+  text-align:center;
+  padding: 0 2rem .5rem 2rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 3rem;
+  border-bottom: .5rem solid #2c3e50;
+  display: inline-block;
+
+}
+
+section.main__over div {
+  max-width: 70rem;
+  margin:auto;
+  column-count: 2;
+  column-gap: 3rem;
+  text-align:left;
+}
+
+.main__over {
+  background-color: #85001b;
+  background-image: url(../img/texture.png);
+}
+
+section p {
+  padding-bottom: 1.3rem;
+}
+
+.main__activiteiten {
+  max-width: 76rem;
+  width: 100%;
+  margin:auto;
+  color: #2c3e50;
+}
+
+.main__activiteiten h2 {
+  color: #2c3e50;
+  text-align:center;
+}
+
+.main__activiteiten #calendar {
+  width: 100%;
+  height: 50rem;
+}
+
+article {
+  display: flex;
+  text-align:left;
+  justify-content: space-between;
+  margin: 5rem 0;
+  transition: .3s ease all;
+}
+
+.main__activiteiten .activity__left {
+  margin-right: 2rem;
+}
+
+.main__activiteiten .activity__left a:link,.main__activiteiten .activity__left a:visited {
+  width: 100%;
+  background-color: #85001b;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  padding: .7rem;
+  margin-top: 1rem;
+  text-align:center;
+}
+
+.main__activiteiten .activity__content h3 {
+  text-transform: Uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #85001b;
+}
+
+.main__activiteiten .activity__content .date {
+  font-size: 1.1rem;
+  position: relative;
+  top:-.6rem;
+}
+
+.main__praesidium {
+  background-color: #85001b;
+  background-image: url(../img/texture.png);
+}
+
+.main__praesidium > div {
+  max-width: 70rem;
+  width: 100%;
+  display: flex;
+  margin:auto;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+#knaek{
+  max-width: 100rem !important;
+  border-radius: 0 !important;
+}
+
+.main__praesidium article {
+  height: 20rem;
+  max-width: 20rem;
+  width: 100%;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 0rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.main__praesidium article:hover div {
+  height: 100%;
+  padding: 1rem;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+
+.main__praesidium article:hover div h4 {
+  margin: .5rem 0 1rem 0;
+}
+
+.main__praesidium article div {
+  height: 6rem;
+  overflow:hidden;
+  transition: .3s ease all;
+  text-align:center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #2c3e50b6;
+}
+
+.main__praesidium article div h4 {
+  font-size: 1.5rem;
+  text-transform: Uppercase;
+  transition: .3s ease all;
+  font-weight: bold;
+  margin: .5rem 0 .3rem 0;
+}
+
+.contact h2 {
+  color: #2c3e50;
+}
+
+.contact form {
+  padding-top: 4rem;
+}
+
+.contact input, textarea {
+  display:block;
+  max-width: 40rem;
+  width: 100%;
+  margin:auto;
+  height: 5rem;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  margin-top: -3px;
+  font-size: 1.4rem;
+  line-height: 5rem;
+  padding-left: 2rem;
+}
+
+.contact textarea {
+  height: 10rem;
+  line-height: 1.4;
+  padding-top: 1.6rem;
+}
+
+.contact input:focus, textarea:focus {
+  outline: none;
+}
+
+.contact input[type="submit"] {
+  height: 5rem;
+  padding: 0;
+  background-color: #85001b;
+  color: #FFF;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-family: "Futura", sans-serif;
+  transition: 0.3s ease all;
+}
+
+.contact input[type="submit"]:hover {
+  background-color: #2c3e50;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  background-color:#2c3e50;
+  padding: 4rem 0;
+  text-align:center;
+}
+
+.disapear{
+  color: #233140;
+}
+
+footer a:link,footer a:visited {
+  color: white;
+}
+
+/* footer a:hover {
+  color: #85001b;
+} */
+
+footer>div>div {
+  width: 33.33%;
+}
+
+footer h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+footer .footer__container {
+  display: flex;
+  max-width: 96rem;
+  margin:auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer .copy {
+  margin-bottom: -4rem;
+  margin-top: 4rem;
+  background-color: #233140;
+  padding: 3rem;
+}
+
+* Praesidium */
+.praeses {background-image: url(../img/janik_lievens.jpg);}
+.vice {background-image: url(../img/jules_decock.png);}
+.quaestor {background-image: url(../img/pauline_robbe.jpg);}
+.cantor {background-image: url(../img/robin_bekaert.jpg);}
+.temmer {background-image: url(../img/marie_lievens.jpg);}
+.zeden1 {background-image: url(../img/daan.jpg);}
+.sportcultuur {background-image: url(../img/nick_hautekeete.jpg);}
+.prit {background-image: url(../img/jakob_van_der_vennet.jpg);}
+.feest {background-image: url(../img/helena_hanses.jpg);}
+
+.rexaurum {background-image: url(../img/rexaurum.jpg);}
+
+.daan {background-image: url(../img/daan.jpg);}
+.kim {background-image: url(../img/kim.jpg);}
+.gaelle {background-image: url(../img/gaelle.jpg);}
+.hanna {background-image: url(../img/hanna.jpg);}
+.zwits {background-image: url(../img/zwits.jpg);}
+.barry {background-image: url(../img/barry.jpg);}
+
+/* sponsors */
+.knaek {background-image: url(../img/knaek-logo.png);}
+.bematrix{background-image: url(../img/bematrix.png); object-fit: contain;}
+.foxed {background-image: url(../img/foxed-logo.png);}
+.aarepair {background-image: url(../img/aarepair.jpg);}
+.papierenco{background-image: url(../img/Papierenco.png);}
+
+
+.fbbutton {
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  height: 4rem;
+  line-height: 4.5rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+}
+
+.fbbutton:hover {
+  background-color: #85001b;
+}
+
+article.zwits:hover div h4, article.barry:hover div h4 {
+  margin-top: 3rem;
+}
+
+.activity__content {
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .main__activiteiten .activity__content, .main__activiteiten .activity__left {
+    width: 100%;
+    text-align:center;
+  }
+
+
+  .main__activiteiten .activity__content h3 {
+    margin-top: 1rem;
+  }
+
+  .main__activiteiten article {
+    margin-bottom: 10rem;
+  }
+
+  section.main__over div {
+    column-count: 1;
+  }
+
+  header nav {
+    font-size: 1.0rem;
+  }
+
+  .header__quote h2 {
+    font-size: 2rem;
+  }
+
+  .header__quote h3 {
+    font-size: 1.6rem;
+  }
+
+  .main__activiteiten #calendar {
+    width: 80%;
+  }
+
+  article {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .nav__name {
+    display: none;
+  }
+
+  header nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #knaek {
+    background-image: url(../img/knaek-logo-klein.png);
+    width: 20rem;
+    border-radius: 0;
+  }
+}
